@@ -1,3 +1,13 @@
+.input-huge {
+    height: 52px;
+    padding: 10px 16px;
+    font-size: 28px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+.mb-40{
+  margin-bottom: 40px
+}
 .btn {
     padding: 14px 24px;
     border: 0 none;
@@ -5,11 +15,19 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+.btn-huge {
+    padding: 20px 26px;
+    font-size: 30px;
+    line-height: 1.3333333;
+    border-radius: 0px;
+}
 
 .alert-this {
     color: #ffffff;
     background-color: #0099cc;
     border-radius: 0;
+    font-size: 30px;
+
 }
  
 .btn:focus, .btn:active:focus, .btn.active:focus {

@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 	<title>Cuando Pasa Neuquen</title>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -46,7 +48,7 @@
 
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid">
 	<div class="row margin-top">
 
 		<h1 class="sr-only" >Cuando Pasa Neuquen</h1>
@@ -54,10 +56,10 @@
 		<form id="formulario" action="soap.php" method="POST">
 
 			<!-- Linea -->
-			<div class="col-md-6">
+			<div class="col-sm-12 mb-50">
 				<div id="linea-group" class="form-group">
 					<label for="linea" class="sr-only">Linea</label>
-					<select class="form-control input-lg" name="linea" id="linea">
+					<select class="form-control input-huge" name="linea" id="linea">
 					<option>1</option>
 					<option>2</option>
 					<option>3</option>
@@ -92,18 +94,18 @@
 			</div>
 
 			<!-- Parada -->
-			<div class="col-md-6">
+			<div class="col-sm-12 mb-50">
 				<div id="parada-group" class="form-group">
 					<label class="sr-only" for="parada">Parada</label>
-					<input type="text" class="form-control sharp input-lg" name="parada" placeholder="N2894">
+					<input type="text" class="form-control sharp input-huge" name="parada" placeholder="N2894">
 
 				</div>
 			</div>
-
-			<div class="text-center"><button type="submit" class="btn btn-primary sharp">¿Cuando? <span class="fa fa-arrow-right"></span></button></div>
-			
+			<div class="col-sm-12 mb-50">
+			<div class="text-center"><button type="submit" class="btn btn-primary btn-huge sharp">¿Cuando?</button></div>
+			</div>
 		</form>
-		<div class="row"><div class="col-md-12"><div id="resultado"></div></div></div>
+		<div class="row"><div class="col-sm-12"><div id="resultado"></div></div></div>
 		
 	</div>
 </div>
