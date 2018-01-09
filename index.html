@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cuando Pasa Neuquen</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="script.js"></script>
+	<style>
+	body{
+		font-family: 'Lato', sans-serif;
+	}
+	.btn.sharp, .form-control.sharp .alert.sharp{
+		border-radius:0;
+	}
+	.fino{
+		font-weight: 400;
+	}
+</style>
+
+<noscript id="deferred-styles">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> 
+	<link rel="stylesheet" href="styles.css">
+
+</noscript>
+
+
+<script>
+	var loadDeferredStyles = function() {
+		var addStylesNode = document.getElementById("deferred-styles");
+		var replacement = document.createElement("div");
+		replacement.innerHTML = addStylesNode.textContent;
+		document.body.appendChild(replacement)
+		addStylesNode.parentElement.removeChild(addStylesNode);
+	};
+	document.addEventListener('DOMContentLoaded', function () {
+		loadDeferredStyles();
+
+	});
+</script>	
+
+
+
+</head>
+<body>
+	<div class="container">
+	<div class="row margin-top">
+
+		<h1 class="sr-only" >Cuando Pasa Neuquen</h1>
+
+		<form id="formulario" action="soap.php" method="POST">
+
+			<!-- Linea -->
+			<div class="col-md-6">
+				<div id="linea-group" class="form-group">
+					<label for="linea" class="sr-only">Linea</label>
+					<select class="form-control input-lg" name="linea" id="linea">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>6</option>
+					<option>8</option>
+					<option>9</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>17</option>
+					<option>18</option>
+					<option>101</option>
+					<option>102</option>
+					<option>401</option>
+					<option>404</option>
+					<option>501</option>
+					<option>502</option>
+					<option>516</option>
+					<option>50A</option>
+					<option>50B</option>
+					<option>5A</option>
+					<option>5B</option>
+					<option>5E</option>
+					<option>7A</option>
+					<option>7B</option>
+					<option>URBANO</option>
+
+					</select>
+				</div>
+			</div>
+
+			<!-- Parada -->
+			<div class="col-md-6">
+				<div id="parada-group" class="form-group">
+					<label class="sr-only" for="parada">Parada</label>
+					<input type="text" class="form-control sharp input-lg" name="parada" placeholder="N2894">
+
+				</div>
+			</div>
+
+			<div class="text-center"><button type="submit" class="btn btn-primary sharp">¿Cuando? <span class="fa fa-arrow-right"></span></button></div>
+			
+		</form>
+		<div class="row"><div class="col-md-12"><div id="resultado"></div></div></div>
+		
+	</div>
+</div>
+</body>
+</html>

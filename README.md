@@ -1,0 +1,1 @@
+# Ejemplo de consulta de SOAP con headers mediante AJAX
