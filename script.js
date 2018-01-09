@@ -31,12 +31,20 @@ $(document).ready(function() {
                 console.log(data); 
 
                 if (data.success) {
-                    $('#resultado').append(
-                        '<div class="alert alert-this sharp help-block">' + 
-                        data.result.RecuperarProximosArribosResult.ProximoArribo.arribo + 
-                        '</div>'
-                        );
+                    if(!data.result.RecuperarProximosArribosResult){
+                        $('#resultado').append(
+                            '<div class="alert alert-this sharp help-block">' + 
+                            'Sin resultados (¿Esta llegando?)' + 
+                            '</div>'
+                            );
+                    } else {
+                        $('#resultado').append(
+                            '<div class="alert alert-this sharp help-block">' + 
+                            data.result.RecuperarProximosArribosResult.ProximoArribo.arribo + 
+                            '</div>'
+                            );
 
+                    }
 
                 } else {
                     
